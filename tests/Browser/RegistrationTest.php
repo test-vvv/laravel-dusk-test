@@ -75,7 +75,7 @@ class RegistrationTest extends DuskTestCase
                     // Store details
                     ->click('$create-product-save');
 
-            $browser->on(new WelcomeBoardPage())
+            $browser->visit(new WelcomeBoardPage())
                     ->click('@connectStoreLink')
                     ->click('@connectButton')
                     ->type('@url', "test.myshopify.com")
